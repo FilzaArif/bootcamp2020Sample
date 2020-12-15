@@ -6,7 +6,7 @@ name: bootcamp2020Sample
 on:
   # Triggers the workflow on push or pull request events but only for the main branch
   push:
-    branches: [ main ]
+    branches: [ master ]
   
 
   # Allows you to run this workflow manually from the Actions tab
@@ -35,5 +35,5 @@ jobs:
       - name: Installing surge
         run: npm install  --global surge
       - name:  deploying using surge
-        run:  surge ./11bootcamp2020sample.surge.sh --token ${{ secrets.SURGE_TOKEN1 }}.
+        run:  surge ./11bootcamp2020sample.surge.sh --token ${{ secrets.SURGE_TOKEN1 }}
           
